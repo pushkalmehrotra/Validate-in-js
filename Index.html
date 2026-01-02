@@ -7,31 +7,31 @@
 
     <h2>Login Form</h2>
 
-    <!-- Name input -->
+    
     <label>Enter Name:</label><br>
     <input type="text" id="name"><br><br>
 
-    <!-- Age input -->
+
     <label>Enter Age:</label><br>
     <input type="number" id="age"><br><br>
 
-    <!-- Button -->
+    
     <button onclick="checkLogin()">Login</button>
 
-    <!-- Message -->
+    
     <p id="message"></p>
 
     <script>
         function checkLogin() {
-            // Get values from input boxes
+            
             var name = document.getElementById("name").value;
             var age = document.getElementById("age").value;
 
-            // Check if name or age is empty
+            
             if (name === "" || age === "") {
                 document.getElementById("message").innerHTML = "Please fill all details";
             }
-            // Check age condition
+            
             else if (age >= 18) {
                 document.getElementById("message").innerHTML =
                     "Welcome " + name + "! Login Successful ✅";
